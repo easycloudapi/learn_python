@@ -43,6 +43,12 @@ def test_check_even_or_odd(arg1, expected_result):
     unittest.TestCase().assertEqual(expected_result, _check_even_or_odd(arg1))
 
 
+# check python --version
+@pytest.mark.skipif(sys.version_info > (3, 10), reason="python version is greater than 3.10")
+def test_skip_reason():
+    pass
+
+
 class Test_Negative_Unittest(unittest.TestCase):
     def test_missing_param(self):
         """
@@ -64,7 +70,7 @@ class Test_Negative_Unittest(unittest.TestCase):
         """
         testing valueerror exception if passing string datatype as param
         """
-        expected_error_text = "valueError generated, int_var is not int or float"
+        expected_error_text = "valueError generated, type of int_var is str"
         actual_error_text = _check_even_or_odd(int_var="Indra")
         self.assertEqual(expected_error_text, actual_error_text)
         
