@@ -14,7 +14,10 @@
    it will show `no module found - error`
 3. Do test function using pytest
    ```shell
-   pytest -v
+   # unittest will ignore pytest testcases 
+   python -m unittest -v .\tests\test_learn_unittest\test_check_even_or_odd.py
+
+   # pytest tests both unttest.TestCase and pytest both testcases
    # or
    pytest -v tests\test_learn_unittest\test_check_even_or_odd.py
    # or 

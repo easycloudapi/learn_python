@@ -60,6 +60,14 @@ class Test_Negative_Unittest(unittest.TestCase):
         with pytest.raises(TypeError):
             _check_even_or_odd(float_var=11.5)
 
+    def test_wrong_datatype_param(self):
+        """
+        testing valueerror exception if passing string datatype as param
+        """
+        expected_error_text = "valueError generated, int_var is not int or float"
+        actual_error_text = _check_even_or_odd(int_var="Indra")
+        self.assertEqual(expected_error_text, actual_error_text)
+        
 
 if __name__ == "__main__":
     unittest.main()
