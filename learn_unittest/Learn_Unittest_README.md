@@ -65,6 +65,7 @@ Ids | topic | Details | Remarks
 2 | @pytest.mark.<mark_name> | run those testcases which has marked by <mark_name> |
 3 | @pytest.mark.skip(reason="skip reason") | to skip the pytest testcases |
 4 | @pytest.mark.skipif(<bool expression>, reason="skip reason") | to skip the pytest testcases based on bool expression |
-5 | mock and patch | |
+5 | pytest.fixture | |
+6 | setup() and teardown() methods | |
 9 | unittest.TestCase().assertRaises() and pytest.raises | test exception raised from the function |
 10 | <topic> | <details> | <remarks>
