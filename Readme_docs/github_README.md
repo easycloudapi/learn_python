@@ -17,11 +17,20 @@
     >
     > upstream        https://github.com/easycloudapi/learn_python.git (push)
     >
-3. 
+3. Get Git Config details (username, email id):
+    ```shell
+    # --local for project config, 
+    # --global for user config, 
+    # --system for all users' config
+    git config --global -l
+
+    git config --global user.email "email@example.com"
+    git config --global user.name "user_name"
+    ```
 
 ## Git Clone from Main branch:
 ```shell
-git clone 
+git clone https://github.com/easycloudapi/learn_python.git
 ```
 
 ## Git checkout to new branch
@@ -51,3 +60,7 @@ git push --delete origin/<remote_branch>
 # delete remote branch if not merged
 git push -D origin/<remote_branch>
 ```
+
+## Git Pull Request or Merge Request
+
+## Git Fork
