@@ -18,7 +18,8 @@
     ```
 
 ## Unit Test
-1. Click here - [Learn Unit Test](learn_unittest/Learn_Unittest_README.md)
+1. [Learn Unit Test](Readme_docs/Learn_Unittest_README.md)
+2. [Unittest Code Sample](learn_unittest)
 
 ## Github
-1. Click here - [Learn GitHub](github_README.md)
+1. [Learn GitHub](Readme_docs/github_README.md)
