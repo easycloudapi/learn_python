@@ -68,5 +68,6 @@ Ids | topic | Details | Remarks
 5 | pytest.fixture | |
 6 | setup() and teardown() methods | This is the fixtures of unittest. fixture is function/method that runs before and after a block of test code executes. It can be module or class or method level | [setup() and teardown()](learn_unittest/check_jsondata_file.py)
 7 | unittest mock and patch | its require when the functionaly depends on other outside functionality | [mock_&_patch](tests/test_learn_unittest/test_check_api_for_mocking.py)
-8 | unittest.TestCase().assertRaises() and pytest.raises | test exception raised from the function |
+8 | unittest.TestCase().assertRaises() and pytest.raises | test exception raised from the function | [assertRaises, pytest.raises](tests/test_learn_unittest/test_check_even_or_odd.py)
+9 | mock side_effect vs return_value | side_effect to raise the various type of exception and return_value to return the value from mock_obj after patch | [side_effect](tests/test_learn_unittest/test_check_even_or_odd.py) [return_value](tests/test_learn_unittest/test_check_api_for_mocking.py)
 <ids> | <topic> | <details> | <remarks>

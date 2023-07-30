@@ -1,6 +1,7 @@
 import os
 import sys
 import unittest
+from unittest.mock import patch
 import pytest
 
 # sys.path[0]: D:\pythonProject\local_python_project\tests\test_learn_unittest
@@ -73,7 +74,13 @@ class Test_Negative_Unittest(unittest.TestCase):
         expected_error_text = "valueError generated, type of int_var is str"
         actual_error_text = _check_even_or_odd(int_var="Indra")
         self.assertEqual(expected_error_text, actual_error_text)
-        
+
+    @patch("learn_unittest.check_even_or_odd.type")
+    def test_wrong_check_exception_error(self, mock_type):
+        mock_type.side_effect = Exception("there is some exception")
+
+        self.assertEqual("exception generated, there is some exception", _check_even_or_odd(int_var=10))
+
 
 if __name__ == "__main__":
     unittest.main()
