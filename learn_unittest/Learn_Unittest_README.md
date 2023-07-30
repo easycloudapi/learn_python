@@ -61,11 +61,11 @@
 ### Advanced Topic:
 Ids | topic | Details | Remarks
 --- | ----- | ------- | -------
-1 | @pytest.mark.parametrize | parameterized multiple testcases with expected result. | 
-2 | @pytest.mark.<mark_name> | run those testcases which has marked by <mark_name> |
-3 | @pytest.mark.skip(reason="skip reason") | to skip the pytest testcases |
-4 | @pytest.mark.skipif(<bool expression>, reason="skip reason") | to skip the pytest testcases based on bool expression |
+1 | @pytest.mark.parametrize | parameterized multiple testcases with expected result. | [@pytest.mark.parametrize](learn_unittest/check_even_or_odd.py)
+2 | @pytest.mark.<mark_name> | run those testcases which has marked by <mark_name> | [@pytest.mark.<mark_name>](learn_unittest/check_even_or_odd.py)
+3 | @pytest.mark.skip(reason="skip reason") or unittest.skip() | to skip the pytest testcases | 
+4 | @pytest.mark.skipif(<bool expression>, reason="skip reason") | to skip the pytest testcases based on bool expression | [@pytest.mark.skipif(<bool expression>, reason="skip reason")](learn_unittest/check_even_or_odd.py)
 5 | pytest.fixture | |
-6 | setup() and teardown() methods | |
+6 | setup() and teardown() methods | This is the fixtures of unittest. fixture is function/method that runs before and after a block of test code executes. It can be module or class or method level | [setup() and teardown()](learn_unittest/check_jsondata_file.py)
 9 | unittest.TestCase().assertRaises() and pytest.raises | test exception raised from the function |
 10 | <topic> | <details> | <remarks>
