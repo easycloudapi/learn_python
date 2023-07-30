@@ -26,6 +26,8 @@
 
     git config --global user.email "email@example.com"
     git config --global user.name "user_name"
+
+    git config --list
     ```
 
 ## Git Clone from Main branch:

@@ -65,7 +65,7 @@ Ids | topic | Details | Remarks
 2 | @pytest.mark.<mark_name> | run those testcases which has marked by <mark_name> | [@pytest.mark.<mark_name>](tests/test_learn_unittest/test_check_even_or_odd.py)
 3 | @pytest.mark.skip(reason="skip reason") or unittest.skip() | to skip the pytest testcases | 
 4 | @pytest.mark.skipif(<bool expression>, reason="skip reason") | to skip the pytest testcases based on bool expression | [@pytest.mark.skipif(<bool expression>, reason="skip reason")](tests/test_learn_unittest/test_check_even_or_odd.py)
-5 | pytest.fixture | |
+5 | pytest.fixture | fixture runs before and after of the each and all test functions | [@pytest.fixture](tests/test_db/test_db.py)
 6 | setup() and teardown() methods | This is the fixtures of unittest. fixture is function/method that runs before and after a block of test code executes. It can be module or class or method level | [setup() and teardown()](learn_unittest/check_jsondata_file.py)
 7 | unittest mock and patch | its require when the functionaly depends on other outside functionality | [mock_&_patch](tests/test_learn_unittest/test_check_api_for_mocking.py)
 8 | unittest.TestCase().assertRaises() and pytest.raises | test exception raised from the function | [assertRaises, pytest.raises](tests/test_learn_unittest/test_check_even_or_odd.py)
