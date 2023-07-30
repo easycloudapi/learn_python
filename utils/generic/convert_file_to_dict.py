@@ -21,7 +21,6 @@ class ConvertFileToDict(object):
 
         with open(self.file_path) as json_file:
             dict_obj = json.load(json_file)
-        print(f"dict_obj: {dict_obj}")
 
         out_dict["filename"] = filename + file_extension
         out_dict["file_extension"] = file_extension
