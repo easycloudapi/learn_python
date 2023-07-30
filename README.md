@@ -19,7 +19,7 @@
 
 ## Unit Test
 1. [Learn Unit Test](Readme_docs/Learn_Unittest_README.md)
-2. [Unittest Code Sample](learn_unittest)
+2. [Unittest Code Sample](tests/test_learn_unittest)
 
 ## Github
 1. [Learn GitHub](Readme_docs/github_README.md)
